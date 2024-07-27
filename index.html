@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+
+    <!-- this is our css animation cdn -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <div class="container">
+            <div class="box">
+                <h1>QR Code Generator</h1>
+                <p>Paste Text to creat QR Code</p>
+
+                <form id="qrForm">
+                    <input type="text" placeholder="Enter Text" name="qrText" id="qrInputText">
+                    <button type="submit" id="generateBtn">Generator QR Code</button>
+                </form>
+
+                <section class="qr_container" id="qrContainer">
+                    <img src="qr.webp" alt="image not found" width="200" height="200" id="qrImage" class="animate__flipInY">
+                </section>
+
+            </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
